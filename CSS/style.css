@@ -63,19 +63,45 @@ html > body {
   cursor: pointer;
 }
 
-.top-bar__depth1-menu .depth1-list-item:hover .depth1-list-link {
-  background: #2c2a29;
-  color: #669900;
+.top-bar__depth1-menu [class$=list-item]:hover > a {
   text-decoration: underline;
+}
+.top-bar__depth1-menu .depth1-list-item:hover .depth1-list-link {
+  background-color: #2c2a29;
+  color: #669900;
+}
+.top-bar__depth1-menu .depth1-list-item:hover .mega-menu {
+  display: block;
 }
 .top-bar__depth1-menu .depth1-list-link {
   display: block;
   padding-top: 10px;
-  padding-inline: 10px;
+  padding-inline: 1.1rem;
   height: 100%;
   font-size: 15px;
   color: #333;
 }
-.top-bar__depth1-menu > ul ul {
+.top-bar__depth1-menu .mega-menu {
   display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #2c2a29;
+  padding: 0.8rem 0 1.3rem 0;
+}
+.top-bar__depth1-menu .mega-menu .mega-menu-inner {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+.top-bar__depth1-menu .mega-menu .depth2-list-item {
+  flex-grow: 1;
+}
+.top-bar__depth1-menu .mega-menu .depth2-list-item .depth2-list-link {
+  display: block;
+  padding-block: 0.6rem;
+  color: #fff;
+}
+.top-bar__depth1-menu .mega-menu .depth3-list-item .depth3-list-link {
+  color: #999;
+  font-size: 14px;
 }
