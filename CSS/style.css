@@ -6,8 +6,51 @@
 }
 html > body {
   font-family: "GmarketSansMedium";
+  text-underline-position: under;
 }
 
-.text {
-  display: flex;
+.top-bar {
+  background: #f6f5ef;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 2px solid #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-inline: clamp(10px, 2vw, 20px);
+}
+.top-bar .top-bar__container {
+  max-width: 1100px;
+  height: clamp(70px, 9vw, 120px);
+  margin-inline: auto;
+}
+.top-bar .logo {
+  display: block;
+  width: clamp(45px, 8vw, 75px);
+  height: clamp(45px, 8vw, 75px);
+  background-image: url("../assets/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.top-bar .util-nav-item:not(:last-child) .util-nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: #555;
+  opacity: 0.3;
+  width: 1px;
+  height: 10px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.top-bar .util-nav-link {
+  display: block;
+  color: #555;
+  font-size: 13px;
+  padding-inline: 0.8rem;
+  position: relative;
+}
+.top-bar .util-nav-link:hover {
+  text-decoration: underline;
 }
