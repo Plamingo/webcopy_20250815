@@ -33,7 +33,7 @@ html > body {
   background-size: cover;
   background-position: center;
 }
-@media (960px <= width) {
+@media (960px >= width) {
   .top-bar .util-nav {
     display: none;
   }
@@ -67,7 +67,24 @@ html > body {
   border-radius: 5px;
   cursor: pointer;
 }
+.top-bar .mobile-nav {
+  height: 100%;
+}
+@media (width > 960px) {
+  .top-bar .mobile-nav {
+    display: none;
+  }
+}
+.top-bar .mobile-nav i {
+  color: #55443a;
+  font-size: 2.5rem;
+}
 
+@media (width <= 960px) {
+  .top-bar__depth1-menu {
+    display: none;
+  }
+}
 .top-bar__depth1-menu [class$=list-item]:hover > a {
   text-decoration: underline;
 }
