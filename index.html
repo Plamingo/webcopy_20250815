@@ -8,6 +8,8 @@
     <script src="js/script.js"></script>
     <!-- 테일윈드 css 로드 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- 폰트어썸 css 로드 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- 스타일 css 로드 -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,16 +23,409 @@
                         <a href="#" class="logo"></a>
                     </div>
                 </div>
-                <div class="top-bar-right flex-grow py-3">
+                <div class="top-bar-right flex-grow pt-3">
                     <nav class="util-nav flex justify-end">
-                        <ul class="util-nav-list flex">
+                        <ul class="util-nav-list flex items-center">
                             <li class="util-nav-item"><a href="#" class="util-nav-link">Sign In</a></li>
                             <li class="util-nav-item"><a href="#" class="util-nav-link">My Starbucks</a></li>
                             <li class="util-nav-item"><a href="#" class="util-nav-link">Customer Services & Ideas</a></li>
                             <li class="util-nav-item"><a href="#" class="util-nav-link">Find a Store</a></li>
                         </ul>
+                        <div class="search-btn-box">
+                            <button class="search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
                     </nav>
-                    
+                    <nav class="top-bar__depth1-menu flex justify-end flex-grow bg-red-300">
+                        <ul class="depth1-list flex">
+                            <li class="depth1-list-item">
+                                <a href="#" class="depth1-list-link">1차메뉴아이템</a>
+                                <ul class="depth2-list flex">
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="depth1-list-item">
+                                <a href="#" class="depth1-list-link">1차메뉴아이템</a>
+                                <ul class="depth2-list flex">
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="depth1-list-item">
+                                <a href="#" class="depth1-list-link">1차메뉴아이템</a>
+                                <ul class="depth2-list flex">
+                                    <li class="depth2-list-item ">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="depth1-list-item">
+                                <a href="#" class="depth1-list-link">1차메뉴아이템</a>
+                                <ul class="depth2-list flex">
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="depth1-list-item">
+                                <a href="#" class="depth1-list-link">1차메뉴아이템</a>
+                                <ul class="depth2-list flex">
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="depth1-list-item">
+                                <a href="#" class="depth1-list-link">1차메뉴아이템</a>
+                                <ul class="depth2-list flex">
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="depth1-list-item">
+                                <a href="#" class="depth1-list-link">1차메뉴아이템</a>
+                                <ul class="depth2-list flex">
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="depth2-list-item">
+                                        <a href="#" class="depth2-list-link">2차메뉴아이템</a>
+                                        <ul class="depth3-list">
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                            <li class="depth3-list-itme"><a href="#" class="depth3-list-link">3차메뉴아이템</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>

@@ -54,3 +54,28 @@ html > body {
 .top-bar .util-nav-link:hover {
   text-decoration: underline;
 }
+.top-bar .util-nav .search-btn {
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top-bar__depth1-menu .depth1-list-item:hover .depth1-list-link {
+  background: #2c2a29;
+  color: #669900;
+  text-decoration: underline;
+}
+.top-bar__depth1-menu .depth1-list-link {
+  display: block;
+  padding-top: 10px;
+  padding-inline: 10px;
+  height: 100%;
+  font-size: 15px;
+  color: #333;
+}
+.top-bar__depth1-menu > ul ul {
+  display: none;
+}
